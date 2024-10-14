@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Details - Tech Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="/">SEU Tech Forum</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="questions.html">Questions</a></li>
+                    <li><a href="status.html">Status</a></li>
+                    <li><a href="users.html">Users</a></li>
+                    <li><a href="signup.html" class="join-button">Join the Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="container question-details">
+        <article class="question">
+            <h2>How do I center a div?</h2>
+            <div class="question-meta">
+                <span>Posted by User123</span>
+                <span>2 hours ago</span>
+            </div>
+            <div class="question-body">
+                <p>I'm trying to center a div within another div. Any help would be appreciated!</p>
+            </div>
+
+            <div class="actions">
+                <button class="btn upvote-button">Upvote</button>
+                <button class="btn downvote-button">Downvote</button>
+                <button class="btn">Edit</button>
+                <button class="btn">Delete</button>
+            </div>
+        </article>
+
+        <section class="answers">
+            <h3>Answers</h3>
+            <article class="answer">
+                <div class="answer-meta">
+                    <span>Posted by User456</span>
+                    <span>1 hour ago</span>
+                </div>
+                <div class="answer-body">
+                    <p>You can center a div by using CSS. Try using <code>margin: auto;</code> along with a specified
+                        width:</p>
+                    <pre><code>div {
+                        width: 50%;
+                        margin: auto;
+                    }</code></pre>
+                </div>
+
+                <div class="vote-section">
+                    <button class="btn vote-btn upvote">▲</button>
+                    <span class="vote-count">10</span>
+                    <button class="btn vote-btn downvote">▼</button>
+                    <span class="vote-count downvote-count">2</span>
+                </div>
+
+                <div class="actions">
+                    <button class="btn">Edit</button>
+                    <button class="btn">Delete</button>
+                </div>
+            </article>
+            <!-- Add more answers as needed -->
+        </section>
+
+        <section class="add-answer">
+            <h3>Your Answer</h3>
+            <form>
+                <textarea placeholder="Write your answer here..." rows="5" required></textarea>
+                <button type="submit" class="btn">Submit Answer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Forum. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
