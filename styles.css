@@ -425,3 +425,47 @@ nav ul li a.join-button:hover {
 
 
 
+/* status posting */
+
+.status-form {
+    background: #fff; /* White background for the form */
+    padding: 20px; /* Padding around the form */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 500px; /* Max width for the form */
+    margin: auto; /* Center the form */
+}
+
+.status-form h2 {
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the textarea */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    resize: none; /* Disable resizing */
+}
+
+textarea:focus {
+    border-color: #007BFF; /* Border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.post-status-button {
+    display: block; /* Block-level button */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.post-status-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
